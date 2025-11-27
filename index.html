@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>आदर्श विद्या मंदिर माध्यमिक सांडेराव | Home</title>
+    
+    <!-- Google Fonts for Hindi -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS Framework -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary-color: #FF9933; /* Saffron - Vidya Bharti theme */
+            --secondary-color: #1a237e; /* Deep Blue - Professionalism */
+            --light-bg: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Noto Sans Devanagari', sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: var(--secondary-color);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .navbar-brand, .nav-link {
+            color: white !important;
+            font-weight: 600;
+        }
+        .nav-link:hover {
+            color: var(--primary-color) !important;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(rgba(26, 35, 126, 0.8), rgba(26, 35, 126, 0.8)), url('https://source.unsplash.com/1600x900/?school,education');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .hero-btn {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .hero-btn:hover {
+            background-color: white;
+            color: var(--primary-color);
+        }
+
+        /* Notice Board */
+        .notice-board {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px;
+        }
+
+        /* Section Titles */
+        .section-title {
+            color: var(--secondary-color);
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: var(--primary-color);
+            margin: 10px auto;
+        }
+
+        /* Cards */
+        .feature-card, .result-card {
+            border: none;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            height: 100%;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .icon-circle {
+            width: 60px;
+            height: 60px;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin: 0 auto 15px;
+        }
+
+        /* Fee Table */
+        .table-fees thead {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: white;
+            padding: 40px 0 20px;
+        }
+        .footer-link {
+            color: #ddd;
+            text-decoration: none;
+        }
+        .footer-link:hover {
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fas fa-school me-2"></i>आदर्श विद्या मंदिर</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">मुख पृष्ठ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">परिचय</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#facilities">सुविधाएं</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#results">परिणाम</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#fees">शुल्क</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">संपर्क</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Notice Board Ticker -->
+    <div class="notice-board">
+        <div class="container d-flex align-items-center">
+            <span class="badge bg-light text-dark me-3">सूचना</span>
+            <marquee behavior="scroll" direction="left">नए सत्र के लिए प्रवेश प्रारंभ | गार्गी पुरस्कार हेतु 5 छात्राओं का चयन | वार्षिक खेल महोत्सव अगले माह आयोजित होगा।</marquee>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-section">
+        <div class="container">
+            <h1 class="display-4 fw-bold">आदर्श विद्या मंदिर माध्यमिक सांडेराव</h1>
+            <p class="lead mb-4">शिक्षा और संस्कारों का अनूठा संगम | विद्या भारती संस्थान जोधपुर प्रांत द्वारा संचालित</p>
+            <p class="mb-4"><i class="fas fa-map-marker-alt"></i> आखरिया चौक, सांडेराव (306708)</p>
+            <a href="#contact" class="hero-btn">संपर्क करें</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="section-title">विद्यालय के बारे में</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="https://source.unsplash.com/600x400/?classroom,india" alt="School Building" class="img-fluid rounded shadow mb-3">
+                </div>
+                <div class="col-md-6">
+                    <h4 class="text-primary fw-bold">उत्कृष्टता की ओर अग्रसर</h4>
+                    <p>यह विद्यालय विद्या भारती संस्थान जोधपुर प्रांत द्वारा संचालित एक माध्यमिक विद्यालय है। हमारे यहाँ कक्षा 1 से कक्षा 10 तक की शिक्षा प्रदान की जाती है। विद्यालय का उद्देश्य केवल किताबी ज्ञान देना नहीं, बल्कि विद्यार्थियों में भारतीय संस्कारों और जीवन मूल्यों का निर्माण करना भी है।</p>
+                    <div class="row text-center mt-4">
+                        <div class="col-4">
+                            <h3 class="fw-bold text-dark">350+</h3>
+                            <small>विद्यार्थी</small>
+                        </div>
+                        <div class="col-4">
+                            <h3 class="fw-bold text-dark">15</h3>
+                            <small>आचार्य/टीचर्स</small>
+                        </div>
+                        <div class="col-4">
+                            <h3 class="fw-bold text-dark">15</h3>
+                            <small>कमरे</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Principal Message -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="card border-0 shadow-sm p-4">
+                <div class="row align-items-center">
+                    <div class="col-md-3 text-center">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Principal" class="img-fluid rounded-circle" style="width: 150px; border: 4px solid var(--primary-color);">
+                    </div>
+                    <div class="col-md-9">
+                        <h3 class="mb-1">प्रधानाचार्य का संदेश</h3>
+                        <h5 class="text-primary">श्री भवानी सिंह जी</h5>
+                        <p class="text-muted">विगत 6 वर्षों से सेवारत</p>
+                        <p class="fst-italic">"हमारा लक्ष्य प्रत्येक बच्चे का सर्वांगीण विकास करना है। हम अनुशासन, शिक्षा और संस्कारों के माध्यम से एक सशक्त राष्ट्र के निर्माण में योगदान दे रहे हैं। हमारे विद्यालय ने पिछले वर्षों में निरंतर प्रगति की है और हम आगे भी उत्कृष्टता के लिए प्रतिबद्ध हैं।"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section id="facilities" class="py-5">
+        <div class="container">
+            <h2 class="section-title">विद्यालय की सुविधाएं</h2>
+            <div class="row g-4">
+                <div class="col-md-4 col-sm-6">
+                    <div class="card feature-card p-4 text-center">
+                        <div class="icon-circle"><i class="fas fa-desktop"></i></div>
+                        <h5>कंप्यूटर कक्ष</h5>
+                        <p class="small text-muted">आधुनिक कंप्यूटर लैब जहाँ बच्चे तकनीक सीखते हैं।</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card feature-card p-4 text-center">
+                        <div class="icon-circle"><i class="fas fa-chalkboard-teacher"></i></div>
+                        <h5>स्मार्ट क्लास</h5>
+                        <p class="small text-muted">स्मार्ट बोर्ड के माध्यम से नई शिक्षा प्रणाली लागू।</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card feature-card p-4 text-center">
+                        <div class="icon-circle"><i class="fas fa-video"></i></div>
+                        <h5>सुरक्षा (CCTV)</h5>
+                        <p class="small text-muted">पूरा परिसर सीसीटीवी कैमरों की निगरानी में है।</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card feature-card p-4 text-center">
+                        <div class="icon-circle"><i class="fas fa-book-reader"></i></div>
+                        <h5>पुस्तकालय</h5>
+                        <p class="small text-muted">ज्ञानवर्धक पुस्तकों का विशाल संग्रह।</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card feature-card p-4 text-center">
+                        <div class="icon-circle"><i class="fas fa-building"></i></div>
+                        <h5>विशाल हॉल</h5>
+                        <p class="small text-muted">प्रार्थना और कार्यक्रमों के लिए नवनिर्मित बड़ा हॉल।</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card feature-card p-4 text-center">
+                        <div class="icon-circle"><i class="fas fa-futbol"></i></div>
+                        <h5>खेल मैदान</h5>
+                        <p class="small text-muted">शारीरिक विकास के लिए बड़ा और खुला मैदान।</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results & Achievements -->
+    <section id="results" class="py-5 bg-primary text-white" style="background: linear-gradient(45deg, #1a237e, #283593);">
+        <div class="container">
+            <h2 class="section-title text-white">उपलब्धियां और परिणाम</h2>
+            <p class="text-center mb-5">सांडेराव गांव में पिछले 5 वर्षों से सर्वश्रेष्ठ बोर्ड परिणाम</p>
+            
+            <div class="row text-center mb-5">
+                <div class="col-md-4 mb-3">
+                    <div class="bg-white text-dark p-4 rounded shadow">
+                        <h1 class="display-4 fw-bold text-success">96.50%</h1>
+                        <p class="mb-0 fw-bold">अब तक का सर्वश्रेष्ठ परिणाम</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="bg-white text-dark p-4 rounded shadow">
+                        <h1 class="display-4 fw-bold text-warning">5</h1>
+                        <p class="mb-0 fw-bold">गार्गी पुरस्कार विजेता बहिनें</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="bg-white text-dark p-4 rounded shadow">
+                        <h1 class="display-4 fw-bold text-primary">15/18</h1>
+                        <p class="mb-0 fw-bold">प्रथम श्रेणी (पिछले वर्ष)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card text-dark">
+                        <div class="card-header bg-warning fw-bold">पिछले वर्ष का बोर्ड परिणाम विश्लेषण (कुल 18 विद्यार्थी)</div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                प्रथम श्रेणी (First Division)
+                                <span class="badge bg-success rounded-pill">15</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                द्वितीय श्रेणी (Second Division)
+                                <span class="badge bg-primary rounded-pill">2</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                तृतीय श्रेणी (Third Division)
+                                <span class="badge bg-secondary rounded-pill">1</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fees Structure -->
+    <section id="fees" class="py-5">
+        <div class="container">
+            <h2 class="section-title">शुल्क संरचना (Fees Structure)</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="table-responsive shadow-sm rounded">
+                        <table class="table table-bordered table-striped table-hover table-fees mb-0 text-center">
+                            <thead>
+                                <tr>
+                                    <th>कक्षा (Class)</th>
+                                    <th>वार्षिक शुल्क (Annual Fee)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Nursery</td>
+                                    <td>₹5,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Class 1st</td>
+                                    <td>₹7,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Class 2nd to 5th</td>
+                                    <td>₹8,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Class 6th to 8th</td>
+                                    <td>₹9,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Class 9th</td>
+                                    <td>₹11,000</td>
+                                </tr>
+                                <tr class="table-primary fw-bold">
+                                    <td>Class 10th</td>
+                                    <td>₹17,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">चित्र दीर्घा (Gallery)</h2>
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <img src="https://source.unsplash.com/400x300/?students,indian" class="img-fluid rounded shadow w-100" alt="Cultural Program">
+                    <p class="text-center mt-2 small">सांस्कृतिक कार्यक्रम</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://source.unsplash.com/400x300/?sports,school" class="img-fluid rounded shadow w-100" alt="Sports">
+                    <p class="text-center mt-2 small">खेल प्रतियोगिताएं</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://source.unsplash.com/400x300/?computer,lab" class="img-fluid rounded shadow w-100" alt="Lab">
+                    <p class="text-center mt-2 small">प्रायोगिक कार्य</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="section-title">संपर्क करें</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 border-0 shadow-sm p-4">
+                        <h4>संपर्क विवरण</h4>
+                        <ul class="list-unstyled mt-3">
+                            <li class="mb-3"><i class="fas fa-school text-primary me-2"></i> <strong>आदर्श विद्या मंदिर माध्यमिक सांडेराव</strong></li>
+                            <li class="mb-3"><i class="fas fa-map-marked-alt text-primary me-2"></i> आखरिया चौक, सांडेराव, राजस्थान (306708)</li>
+                            <li class="mb-3"><i class="fas fa-phone-alt text-primary me-2"></i> +91-9876543210 (उदाहरण नंबर)</li>
+                            <li class="mb-3"><i class="fas fa-envelope text-primary me-2"></i> contact@avmsanderao.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!-- Google Map Placeholder -->
+                    <div class="map-responsive rounded shadow-sm overflow-hidden" style="height: 100%; min-height: 300px;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3600!2d73.1!3d25.3!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDE4JzAwLjAiTiA3M8KwMDYnMDAuMCJF!5e0!3m2!1sen!2sin!4v1600000000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-1">&copy; 2024 आदर्श विद्या मंदिर माध्यमिक सांडेराव. सर्वाधिकार सुरक्षित।</p>
+            <p class="small text-muted">शिक्षा ही सेवा है | विद्या भारती संस्थान</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
